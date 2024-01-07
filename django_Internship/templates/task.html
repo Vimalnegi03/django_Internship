@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="/static/task.css">
+    </head>
+    <body background="https://images.pexels.com/photos/6863518/pexels-photo-6863518.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <div class="main">
+          <form method="POST">
+            {% csrf_token %}
+           
+            <div class="head">Calculator</div>
+            <label class="label">Value 1</label><br/>
+            <input type="text" name="num1" class="input" placeholder="Enter num 1"/><br/>
+            <label class="label">Value 2</label><br>
+            <input type="text" name="num2" class="input" placeholder ="Enter num 2" /><br>
+            <label class="label">Select operation</label><br>
+            <select name="ope" class="label"><option value ="+" class="op">+</option>
+            <option value ="-" class="op">-</option>
+            <option value ="*" class="op">*</option>
+            <option value ="/" class="op">/</option></select><br>
+            <button type="Submit" class="button">Calculate</button><br>
+            <label class="label">Result-:</label><br>
+            <input type="text" value="{{c}}" class="input" placeholder="Result -:"/><br>
+        </div>
+    </body>
+    </html>
