@@ -1,2 +1,3 @@
 # django_Internship
 In this project I have created an HTML PAGE (TASK.HTML) that is dynamicaly taking data from viwes.py and performing basic operation of a calculator...
+Made with ❤️ VIMAL NEGI
